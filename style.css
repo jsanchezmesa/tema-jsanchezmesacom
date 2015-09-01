@@ -1,0 +1,529 @@
+/**
+Theme Name: jsanchezmesa Theme
+Theme URI: http://www.jsanchezmesa.com
+Description: Web personal de Juan Sánchez Mesa.
+Author: Juan Sánchez Mesa
+Author URI: http://www.jsanchezmesa.com
+Version: 1.0
+*/
+
+@import url('css/normalize.css');
+@import url(https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-size:larger;
+	color:#000;
+}
+
+/* imagenes responsive */
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, h1>a, h2>a, h3>a, h4>a, h5>a, h6>a{
+	color:#3399cc;
+}
+
+a{
+	color:#3399cc;
+	text-decoration: none;
+}
+
+textarea{
+	max-width: 100%;
+	resize:none;
+}
+
+pre{
+	border:1px solid #ddd;
+	background-color:#eee;
+	padding:5px;
+	border-radius:5px;
+}
+
+.header-main{
+	display:inline-block;
+	width:100%;
+	height:10%;
+	background-color: #333;
+	padding:0;
+	position: fixed;
+	top:0;
+}
+
+.logo-main{
+	width:80%;
+	padding:1%;
+	margin:0;
+
+}
+
+.logo-main h1{
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+}
+
+/* Menu responsive */
+.menu-main{
+	background-color: #3399cc;
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-size: larger;
+}
+
+.menu-main ul{
+	max-height: 0;
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-main ul.open-menu{
+	max-height: 700px;
+	transition: max-height .5s;
+}
+
+.menu-main li{
+	padding:4% 0;
+	border-bottom: 1px solid #333;
+}
+
+.menu-main li:first-child{
+	margin-top: 0;
+}
+
+.menu-main li:last-child{
+	border-bottom: none;
+}
+
+.menu-main li a{
+	color:#fff;
+	text-transform: uppercase;
+	font-size:smaller;
+}
+
+.nav-mobile{
+	position: fixed;
+	left:85%;
+	top:4%;
+	height: 6px;
+	width:30px;
+	border-radius:15px;
+	background-color: #3399cc;
+}
+	.nav-mobile:before{
+		transition:all .25s;
+		content:"";
+		position: absolute;
+		left:0;
+		top:-8px;
+		height: 6px;
+		width: 30px;
+		border-radius: 15px;
+		background-color: #3399cc;
+	}
+
+	.nav-mobile:after{
+		transition:all .25s;
+		content:"";
+		position: absolute;
+		left:0;
+		top:8px;
+		height: 6px;
+		width: 30px;
+		border-radius: 15px;
+		background-color: #3399cc;
+	}
+
+/* fin menu responsive */
+
+
+.wrapper{
+	width:95%;
+	margin:0 auto;
+	margin-top:20%;
+}
+
+/* articulos */
+.articulo{
+	margin-bottom:15%;
+}
+
+.categoria{
+	padding: 0;
+	margin: 0;
+}
+
+.post-categories{
+	list-style: none;
+	margin:0;
+	margin-bottom: -10px;
+	padding: 0;
+	border-bottom: 2px solid #3399cc;
+}
+
+.post-categories a{
+	color:#333;
+	font-weight: bold;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.titulo-articulo{
+	margin-bottom:0;
+}
+
+.fecha-articulo, .numero-comentarios{
+	color:#999;
+	font-weight: bold;
+}
+
+.numero-comentarios:before{
+	font-family:FontAwesome;
+	content:'\f086';
+	padding:0 1px;
+}
+
+.thumbnail{
+	margin: 15px 0;
+}
+
+.more-link{
+	color:#3399cc;
+	padding:1%;
+	font-weight: bold;
+}
+
+.more-link:after{
+	font-family:FontAwesome;
+	content:"\f101";
+	padding:0 5px;
+}
+/* fin articulos */
+
+/* paginación */
+.page-numbers{
+	list-style: none;
+	padding: 0;
+	color:#fff;
+}
+
+.page-numbers li{
+	display:inline;
+	background-color:#3399cc;
+	padding:1%;
+}
+
+.page-numbers .current{
+	color:#333;
+}
+/* fin paginación */
+
+/* COMENTARIOS
+	www.esandra.com
+*/
+.commentlist li{
+	list-style: none !important;
+}
+
+.comment-body{
+	padding: 15px;
+}
+
+.comment-author{
+	margin-top: 5px;
+}
+
+.reply, .commentmetadata{
+	font-size: 0.9em;
+}
+
+.depth-1, .depth-2, .depth-3, .depth-4{
+	border: 1px solid #eaeaea;
+	border-radius: 4px;
+}
+
+.depth-1, .depth-3{
+	background-color: #fafafa;
+}
+
+.depth-2, .depth-4{
+	background-color: #fff;
+}
+
+.comment-author-juansm{
+	border: 3px solid #eaeaea;
+	border-left: 3px solid #fbc356;
+}
+
+.depth-1{
+	margin:20px 0;
+}
+
+/* respuestas */
+.depth-2{
+	margin: 2% 5% !important;
+}
+
+.depth-3{
+	margin: 2% 7% !important;
+}
+
+.depth-4{
+	margin: 2% 5% 4% 10% !important;
+}
+
+#comment, #author, #email{
+	border-radius: 4px;
+	border:2px solid #ccc;
+}
+
+/* footer */
+.footer-main{
+	width:100%;
+	background-color: #333;
+	display:inline-block;
+	color:#fff;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.footer-main ul{
+	list-style:none;
+	margin-left: 0;
+	padding: 0;
+}
+
+.footer-main a{
+	color:#fff;
+}
+
+/* sidebar widgets */
+.sidebar hr{
+	display: none;
+}
+
+.sidebar h3{
+	display:inline-block;
+	color:#333;
+	border-bottom:2px solid #3399cc;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: smaller;
+}
+
+.screen-reader-text{
+	display: none;
+}
+
+.searchform{
+	width:100%;
+}
+
+.searchform div{
+	width:90%;
+	margin:0 auto;
+}
+
+.searchform input#s, .searchform input#searchsubmit{
+	border:1px solid #ccc;
+	float:left;
+	color:#333;
+	display: inline-block;
+
+}
+
+.searchform input#s{
+	background:#fff;
+	height: 40px;
+	width:75%;
+	border-radius:5px 0 0 5px;
+}
+
+.searchform input#searchsubmit{
+	background:#ddd;
+	height: 44px;
+	width:22%;
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+}
+
+#menu-enlaces-sociales{
+	width:100%;
+	list-style:none;
+}
+
+#menu-enlaces-sociales li{
+	display:table-cell;
+}
+
+#menu-enlaces-sociales a{
+	width:3.2em;
+	height: 3.2em;
+}
+
+#menu-enlaces-sociales li a:before{
+	content: "\f415";
+	padding:0 10px;
+	font-family: FontAwesome;
+	font-size:24px;
+	color:#333;
+	vertical-align: middle;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#menu-enlaces-sociales li a[href*="facebook"]:before{
+	content: "\f082";
+}
+
+#menu-enlaces-sociales li a[href*="twitter"]:before{
+	content: "\f081";
+}
+
+#menu-enlaces-sociales li a[href*="github"]:before{
+	content: "\f092";
+}
+
+#menu-enlaces-sociales li a[href*="mailto"]:before{
+	content: "\f0e0";
+}
+
+#menu-enlaces-sociales li a[href*="linkedin"]:before{
+	content: "\f08c";
+}
+
+#menu-enlaces-sociales li a[href*="plus.google"]:before{
+	content: "\f0d4";
+}
+
+.sidebar ul{
+	padding-left: 0;
+}
+
+.cat-item{
+	list-style: none;
+}
+
+.cat-item:before{
+	font-family: FontAwesome;
+	color:#666;
+	content:"\f07b";
+	padding-right:5px;
+}
+
+.cat-item a{
+	color:#666;
+}
+
+.tagcloud a{
+	color:#666;
+}
+
+/* Version tablet y escritorio */
+@media all and (min-width:768px){
+	body{
+		background-color: #eee;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+
+	.header-main{
+		position: initial;
+		overflow: hidden;
+		padding:1% 0 0 0;
+		margin-bottom: 25px;
+	}
+
+	.logo-main{
+		width:50%;
+		float:left;
+		padding:2%;
+	}
+
+	.nav-mobile{
+		display: none;
+	}
+
+	.menu-main{
+		width:100%;
+		clear:both;
+	}
+
+	.menu-main ul{
+		display: table;
+		padding-left:2%;
+	}
+
+	.menu-main li{
+		display: table-cell;
+		padding: 5px 20px;
+		border-bottom: none;
+	}
+
+	.menu-main li a{
+		color:#fff;
+	}
+
+	.menu-main li a:hover{
+		text-shadow:2px 2px #333;
+		text-decoration: none;
+	}
+
+	.wrapper{
+		margin-top:0;
+		overflow: hidden;
+	}
+
+	.section-main{
+		width:65%;
+		float:left;
+		padding:2.5%;
+		background-color: #fff;
+	}
+
+	.articulo{
+		border-bottom: 1px solid #ccc;
+	}
+
+	.wp-post-image{
+		display: block;
+		width:80%;
+		margin:40px auto;
+	}
+
+	.sidebar{
+		width:24%;
+		float:right;
+	}
+
+	.sidebar h3{
+		margin-top:50px;
+	}
+
+	.sidebar a:hover{
+		color:#333;
+		text-decoration: none;
+	}
+
+	.sidebar li{
+		margin:20px 0;
+	}
+
+	.searchform div{
+		width:100%;
+	}
+
+	#menu-enlaces-sociales a:hover{
+		text-decoration: none;
+		opacity:0.7;
+		transition:opacity .4s;
+	}
+}
