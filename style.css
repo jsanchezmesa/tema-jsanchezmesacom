@@ -468,12 +468,15 @@ pre{
 		border-bottom: none;
 	}
 
+	.menu-main li:hover{
+		background-color: rgba(200, 200, 200, 0.5);
+	}
+
 	.menu-main li a{
 		color:#fff;
 	}
 
 	.menu-main li a:hover{
-		text-shadow:2px 2px #333;
 		text-decoration: none;
 	}
 
