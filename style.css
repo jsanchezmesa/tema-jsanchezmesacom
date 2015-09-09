@@ -37,6 +37,7 @@ textarea{
 }
 
 pre{
+	font-size: small;
 	border:1px solid #ddd;
 	background-color:#eee;
 	padding:5px;
