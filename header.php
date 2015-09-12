@@ -18,6 +18,8 @@
 	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/html5.js"></script>
 	<![endif]-->
 
+	<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/favicon.ico">
+
 	<?php wp_head(); ?>
 </head>
 <body>
