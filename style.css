@@ -13,13 +13,14 @@ Version: 1.0
 
 body{
 	font-family: 'Roboto', sans-serif;
-	font-size:16px;
+	font-size:1em;
 	color:#000;
 }
 
 /* imagenes responsive */
 img{
 	max-width: 100%;
+	max-width: 1000px;
 	height: auto;
 }
 
@@ -29,19 +30,19 @@ h1, h2, h3, h4, h5, h6, h1>a, h2>a, h3>a, h4>a, h5>a, h6>a{
 }
 
 h1{
-	font-size:48px;
+	font-size:3em;
 }
 
 h2{
-	font-size:24px;
+	font-size:1.5em;
 }
 
 h3{
-	font-size:20px;
+	font-size:1.25em;
 }
 
 h4{
-	font-size: 20px;
+	font-size: 1.25em;
 }
 
 a{
@@ -74,12 +75,12 @@ pre{
 
 .logo-main{
 	width:80%;
-	padding:1%;
+	padding:0;
 	margin:0;
-
 }
 
 .logo-main h1{
+	font-size:2em;
 	padding: 0;
 	margin: 0;
 	vertical-align: middle;
