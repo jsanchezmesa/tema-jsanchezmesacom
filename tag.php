@@ -3,7 +3,7 @@
 <section class="section-main" id="main">
 
 	<?php $post = $posts[0]; ?>
-	<h2>Artículos en la etiqueta <?php single_tag_title(); ?></h2>
+	<h2>Artículos con la etiqueta <?php single_tag_title(); ?></h2>
 
 	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		<article class="articulo">

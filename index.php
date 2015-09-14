@@ -13,7 +13,7 @@
 			}
 		?>
 	</div>
-	<?php the_content('Leer más'); ?>
+	<?php the_content('Seguir leyendo'); ?>
 	</article>
 
 
