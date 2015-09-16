@@ -24,12 +24,15 @@ img{
 }
 
 h1, h2, h3, h4, h5, h6, h1>a, h2>a, h3>a, h4>a, h5>a, h6>a{
-	color:#3399cc;
 	font-family: 'Glegoo', serif;
 }
 
+h1,h2{
+	color:#3399cc;
+}
+
 h1{
-	font-size:3em;
+	font-size:2em;
 }
 
 h2{
@@ -37,11 +40,19 @@ h2{
 }
 
 h3{
-	font-size:1.25em;
+	font-size:1.17em;
 }
 
 h4{
-	font-size: 1.25em;
+	font-size: 1em;
+}
+
+h5{
+	font-size:0.83em;
+}
+
+h6{
+	font-size:0.67em;
 }
 
 a{

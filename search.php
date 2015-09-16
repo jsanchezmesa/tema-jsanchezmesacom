@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <section class="section-main" id="main">
-	<h2>Resultados de la búsqueda:</h2>
+	<h1>Resultados de la búsqueda:</h1>
 	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		<article class="articulo">
-		<h3 class="titulo-articulo"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		<h1 class="titulo-articulo"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 		<small class="fecha-articulo">Publicado el <?php the_time('j/m/Y'); ?> por <?php the_author(); ?> -
 	<?php comments_popup_link("0 comentarios", "1 comentario", "% comentarios", "numero-comentarios", "Comentarios apagados"); ?></small>
 		<?php the_content('Leer más'); ?>

@@ -6,7 +6,7 @@
 	<article class="articulo">
 
 	<span class="categoria"><?php the_category(); ?></span>
-	<h2 class="titulo-articulo"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+	<h1 class="titulo-articulo"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	<small class="fecha-articulo">Publicado el <?php the_time('j/m/Y'); ?> por <?php the_author(); ?> -
 	<?php comments_popup_link("0 comentarios", "1 comentario", "% comentarios", "numero-comentarios", "Comentarios apagados"); ?></small>
 	<div class="thumbnail">

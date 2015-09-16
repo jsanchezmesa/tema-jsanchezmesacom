@@ -3,7 +3,7 @@
 <section class="section-main" id="main">
 
 	<?php $post = $posts[0]; ?>
-	<h2>Artículos de <?php the_author(); ?></h2>
+	<h1>Artículos de <?php the_author(); ?></h1>
 
 	<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		<article class="articulo">
