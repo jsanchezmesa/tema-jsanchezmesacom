@@ -7,9 +7,6 @@
 	<!-- Responsive design viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- favicon
-	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" >
-	-->
 	<link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>" >
 	<link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_directory'); ?>/font-awesome/css/font-awesome.min.css">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">

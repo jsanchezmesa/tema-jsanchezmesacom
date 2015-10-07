@@ -25,6 +25,7 @@ img{
 
 h1, h2, h3, h4, h5, h6, h1>a, h2>a, h3>a, h4>a, h5>a, h6>a{
 	font-family: 'Glegoo', serif;
+	display:block;
 }
 
 h1,h2{
@@ -356,6 +357,7 @@ pre{
 }
 
 /* sidebar widgets */
+
 .sidebar hr{
 	display: none;
 }
@@ -366,7 +368,6 @@ pre{
 	border-bottom:2px solid #3399cc;
 	margin-bottom: 0;
 	text-transform: uppercase;
-	font-size: smaller;
 }
 
 .screen-reader-text{
@@ -378,7 +379,7 @@ pre{
 }
 
 .searchform div{
-	width:90%;
+	width:80%;
 	margin:0 auto;
 }
 
@@ -478,8 +479,56 @@ pre{
 	color:#666;
 }
 
-/* Version tablet y escritorio */
-@media all and (min-width:768px){
+/* Version tablet */
+@media all and (min-width:768px) and (max-width:1023px){
+
+	.logo-main{
+		width:50%;
+		margin:0 auto;
+	}
+
+	.nav-mobile{
+		display:none;
+	}
+
+	.menu-main{
+		width:100%;
+		display:inline-block;
+		padding:10px 0;
+	}
+
+	.menu-main ul{
+		display:inline;
+
+	}
+
+	.menu-main li{
+		display:inline;
+		border-bottom: none;
+		padding:0px 20px;
+	}
+
+	.wrapper{
+		margin-top: 20%;
+		width:85%;
+	}
+
+	.sidebar{
+		font-size: large;
+	}
+
+	.searchform{
+		display:block;
+	}
+
+	.searchform div{
+		width:50%;
+		display:block !important;
+	}
+}
+
+/* Version escritorio */
+@media all and (min-width:1024px){
 	body{
 		background-color: #eee;
 	}
